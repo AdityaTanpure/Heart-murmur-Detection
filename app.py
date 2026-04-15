@@ -75,7 +75,7 @@ rf_model, cnn_model = None, None
 
 try:
     # Updated filenames to match your generated models
-    rf_model = joblib.load("murmur_model1.joblib")
+    rf_model = joblib.load("murmur_model.joblib")
     cnn_model = tf.keras.models.load_model("cnn_model/cnn_best_model1.keras")
     print("✅ Models loaded successfully!")
 except Exception as e:
